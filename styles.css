@@ -212,9 +212,10 @@ a {
 .panel {
   position: absolute;
   border: 1px solid var(--line);
-  background: var(--panel);
+  background: linear-gradient(180deg, rgba(20, 27, 27, 0.94), rgba(11, 15, 16, 0.9));
   box-shadow: var(--shadow);
   backdrop-filter: blur(20px);
+  z-index: 2;
 }
 
 .panel::before {
@@ -226,23 +227,23 @@ a {
 }
 
 .hero-panel {
-  top: 7%;
+  top: 6%;
   left: 4%;
-  width: min(680px, 52vw);
-  padding: clamp(28px, 4vw, 56px);
+  width: min(640px, 48vw);
+  padding: clamp(26px, 3.4vw, 48px);
 }
 
 .wide-panel {
   top: 8%;
-  left: 10%;
-  right: 10%;
+  left: 8%;
+  right: 8%;
   padding: clamp(24px, 4vw, 48px);
 }
 
 .contact-panel {
   top: 8%;
-  left: 8%;
-  width: min(720px, 58vw);
+  left: 6%;
+  width: min(660px, 50vw);
   padding: clamp(24px, 4vw, 48px);
 }
 
@@ -261,10 +262,10 @@ p {
 
 h1,
 h2 {
-  max-width: 14ch;
+  max-width: 15ch;
   margin-bottom: 18px;
   font-weight: 800;
-  line-height: 0.98;
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
@@ -316,10 +317,10 @@ p {
 }
 
 .terminal {
-  right: 5%;
-  bottom: 12%;
-  width: min(520px, 40vw);
-  min-height: 300px;
+  right: 4%;
+  bottom: 8%;
+  width: min(470px, 34vw);
+  min-height: 270px;
   background: rgba(6, 9, 10, 0.86);
   overflow: hidden;
 }
@@ -359,19 +360,21 @@ p {
 
 .iso-cluster {
   position: absolute;
-  right: 16%;
-  top: 17%;
-  width: 260px;
-  height: 260px;
+  right: 9%;
+  top: 10%;
+  width: 220px;
+  height: 220px;
   transform: rotateX(60deg) rotateZ(45deg);
   transform-style: preserve-3d;
+  z-index: 1;
+  opacity: 0.72;
 }
 
 .tile {
   position: absolute;
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 82px;
+  height: 82px;
   border: 1px solid rgba(94, 215, 255, 0.45);
   background: linear-gradient(135deg, rgba(94, 215, 255, 0.16), rgba(89, 255, 156, 0.08));
   box-shadow: 0 0 24px rgba(94, 215, 255, 0.2);
@@ -379,27 +382,27 @@ p {
 }
 
 .tile-b {
-  left: 108px;
+  left: 94px;
   animation-delay: -0.6s;
 }
 
 .tile-c {
-  top: 108px;
+  top: 94px;
   animation-delay: -1.2s;
 }
 
 .tile-d {
-  top: 108px;
-  left: 108px;
+  top: 94px;
+  left: 94px;
   border-color: rgba(255, 184, 92, 0.5);
   animation-delay: -1.8s;
 }
 
 .tile-e {
-  top: 54px;
-  left: 54px;
-  width: 124px;
-  height: 124px;
+  top: 48px;
+  left: 48px;
+  width: 106px;
+  height: 106px;
   border-color: rgba(89, 255, 156, 0.52);
   background: rgba(89, 255, 156, 0.08);
   transform: translateZ(42px);
@@ -408,7 +411,7 @@ p {
 .orbit-grid {
   position: absolute;
   left: 8%;
-  bottom: 11%;
+  bottom: 8%;
   right: 8%;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -448,9 +451,9 @@ p {
 
 .skill-board {
   position: absolute;
-  right: 6%;
-  bottom: 9%;
-  width: min(650px, 52vw);
+  right: 5%;
+  bottom: 8%;
+  width: min(560px, 43vw);
   padding: 22px;
 }
 
@@ -484,10 +487,10 @@ meter::-webkit-meter-optimum-value {
 
 .project-stack {
   position: absolute;
-  right: 7%;
-  top: 5%;
-  bottom: 6%;
-  width: min(620px, 48vw);
+  right: 5%;
+  top: 6%;
+  bottom: 5%;
+  width: min(560px, 43vw);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
@@ -495,7 +498,7 @@ meter::-webkit-meter-optimum-value {
 
 .project-card {
   position: relative;
-  min-height: 220px;
+  min-height: 190px;
   padding: 18px;
   overflow: hidden;
   transition: transform 200ms ease, border-color 200ms ease;
@@ -508,7 +511,7 @@ meter::-webkit-meter-optimum-value {
 
 .project-visual {
   display: block;
-  height: 110px;
+  height: 92px;
   margin: -2px -2px 18px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
@@ -546,9 +549,9 @@ meter::-webkit-meter-optimum-value {
 
 .checklist {
   position: absolute;
-  right: 9%;
-  bottom: 11%;
-  width: min(470px, 38vw);
+  right: 6%;
+  bottom: 10%;
+  width: min(430px, 34vw);
   padding: 24px;
 }
 
@@ -627,6 +630,104 @@ meter::-webkit-meter-optimum-value {
   }
   50% {
     transform: translateZ(30px);
+  }
+}
+
+@media (max-width: 1320px) and (min-width: 981px) {
+  .scene {
+    inset: 98px 18px 70px;
+  }
+
+  .hero-panel {
+    width: min(570px, 46vw);
+    left: 3%;
+  }
+
+  .terminal {
+    width: min(430px, 34vw);
+    right: 3%;
+    bottom: 7%;
+  }
+
+  .iso-cluster {
+    right: 8%;
+    top: 8%;
+    transform: rotateX(60deg) rotateZ(45deg) scale(0.82);
+    transform-origin: center;
+  }
+
+  .wide-panel {
+    left: 6%;
+    right: 6%;
+  }
+
+  .orbit-grid {
+    left: 6%;
+    right: 6%;
+  }
+
+  .skill-board,
+  .project-stack,
+  .checklist {
+    right: 3%;
+    width: 40vw;
+  }
+
+  .contact-panel {
+    left: 4%;
+    width: 50vw;
+  }
+
+  .project-card {
+    min-height: 178px;
+  }
+
+  .project-visual {
+    height: 78px;
+  }
+
+  h1 {
+    font-size: clamp(40px, 6vw, 70px);
+  }
+
+  h2 {
+    font-size: clamp(30px, 4.3vw, 50px);
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1120px) and (min-width: 981px) {
+  .hero-panel,
+  .wide-panel,
+  .contact-panel {
+    width: min(620px, 58vw);
+  }
+
+  .terminal,
+  .skill-board,
+  .project-stack,
+  .checklist {
+    width: min(420px, 36vw);
+  }
+
+  .orbit-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .mini-card {
+    padding: 18px;
+  }
+
+  .mini-card strong {
+    font-size: 18px;
+  }
+
+  .mini-card p {
+    font-size: 13px;
   }
 }
 
