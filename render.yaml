@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: simon-hives-portfolio
+    runtime: static
+    staticPublishPath: .

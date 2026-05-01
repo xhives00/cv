@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Simona Hivese pro IT support, debugging, web development a technickou komunikaci."
+    />
+    <title>Simon Hives | Technical Support & Debugging</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <main class="workspace" aria-live="polite">
+      <header class="topbar">
+        <a class="brand" href="#intro" aria-label="Simon Hives">
+          <span class="brand-mark">SH</span>
+          <span>
+            <strong>Simon Hives</strong>
+            <small>support / debug / web</small>
+          </span>
+        </a>
+
+        <nav class="scene-tabs" aria-label="Sekce portfolia">
+          <button class="tab is-active" type="button" data-scene="intro">01</button>
+          <button class="tab" type="button" data-scene="profile">02</button>
+          <button class="tab" type="button" data-scene="skills">03</button>
+          <button class="tab" type="button" data-scene="projects">04</button>
+          <button class="tab" type="button" data-scene="contact">05</button>
+        </nav>
+
+        <div class="lang-switch" aria-label="Jazyk">
+          <button class="lang is-active" type="button" data-lang="cs">CZ</button>
+          <button class="lang" type="button" data-lang="sk">SK</button>
+          <button class="lang" type="button" data-lang="en">EN</button>
+          <button class="lang" type="button" data-lang="de">DE</button>
+        </div>
+      </header>
+
+      <section class="stage" aria-label="Interaktivni portfolio platno">
+        <div class="scene is-active" id="intro" data-scene-panel="intro">
+          <article class="panel hero-panel fly fly-left">
+            <p class="eyebrow" data-i18n="intro.eyebrow">Portfolio canvas / 2026</p>
+            <h1 data-i18n="intro.title">Technicky klidný problem solver pro support vývoje a debugging.</h1>
+            <p class="lead" data-i18n="intro.lead">
+              Kombinuji web development, analytické myšlení, technickou praxi a férovou komunikaci. Hledám roli, kde můžu pomáhat s incidenty, logy, reprodukcí chyb, dokumentací a podporou vývojářů.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="mailto:simonhives@gmail.com" data-i18n="intro.cta">Kontaktovat</a>
+              <button class="button ghost" type="button" data-next-scene data-i18n="intro.next">Projit signal</button>
+            </div>
+          </article>
+
+          <aside class="terminal panel fly fly-right" aria-label="Diagnosticky terminal">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <strong>diagnostic.session</strong>
+            </div>
+            <pre><code id="typed-log"></code></pre>
+          </aside>
+
+          <div class="iso-cluster fly fly-bottom" aria-hidden="true">
+            <span class="tile tile-a"></span>
+            <span class="tile tile-b"></span>
+            <span class="tile tile-c"></span>
+            <span class="tile tile-d"></span>
+            <span class="tile tile-e"></span>
+          </div>
+        </div>
+
+        <div class="scene" id="profile" data-scene-panel="profile">
+          <article class="panel wide-panel fly fly-top">
+            <p class="eyebrow" data-i18n="profile.eyebrow">Profil</p>
+            <h2 data-i18n="profile.title">Stavím na spolehlivost, kontext a dotažení věcí.</h2>
+            <p data-i18n="profile.body">
+              Poslední roky jsem pracoval hodně prakticky: technické práce, odpovědnost za výsledek, týmová domluva, čtení plánů a komunikace s lidmi v terénu. Do IT se vracím s reálným životním backgroundem a se silným zájmem o debugging, weby, AI nástroje a systematické řešení problémů.
+            </p>
+          </article>
+
+          <div class="orbit-grid fly fly-left">
+            <article class="mini-card">
+              <span>01</span>
+              <strong data-i18n="profile.card1.title">Analytika</strong>
+              <p data-i18n="profile.card1.body">Rozkládám problém na kroky, hledám příčinu, ne jen symptom.</p>
+            </article>
+            <article class="mini-card">
+              <span>02</span>
+              <strong data-i18n="profile.card2.title">Procesy</strong>
+              <p data-i18n="profile.card2.body">Umím tvořit postupy, manuály a předávat technické informace srozumitelně.</p>
+            </article>
+            <article class="mini-card">
+              <span>03</span>
+              <strong data-i18n="profile.card3.title">Praxe</strong>
+              <p data-i18n="profile.card3.body">Znám práci pod tlakem, odpovědnost za dokončení a spolupráci s techniky.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="scene" id="skills" data-scene-panel="skills">
+          <article class="panel fly fly-right">
+            <p class="eyebrow" data-i18n="skills.eyebrow">Skill matrix</p>
+            <h2 data-i18n="skills.title">Stack pro support, diagnostiku a menší vývoj.</h2>
+            <p data-i18n="skills.body">
+              Mám širší technický základ, učím se rychle přes reálné problémy a umím použít AI jako pomocníka při analýzách, dokumentaci i hledání variant řešení.
+            </p>
+          </article>
+
+          <div class="skill-board fly fly-bottom" aria-label="Technicke znalosti">
+            <div class="skill"><span>Python</span><meter min="0" max="100" value="62"></meter></div>
+            <div class="skill"><span>HTML / CSS / JS</span><meter min="0" max="100" value="68"></meter></div>
+            <div class="skill"><span>SQL</span><meter min="0" max="100" value="55"></meter></div>
+            <div class="skill"><span>Git / Bash / PowerShell</span><meter min="0" max="100" value="45"></meter></div>
+            <div class="skill"><span>C / C++ / Pascal</span><meter min="0" max="100" value="45"></meter></div>
+            <div class="skill"><span>AI assisted workflow</span><meter min="0" max="100" value="66"></meter></div>
+            <div class="skill"><span>Debugging mindset</span><meter min="0" max="100" value="78"></meter></div>
+          </div>
+        </div>
+
+        <div class="scene" id="projects" data-scene-panel="projects">
+          <article class="panel fly fly-left">
+            <p class="eyebrow" data-i18n="projects.eyebrow">Projekty</p>
+            <h2 data-i18n="projects.title">Menší weby, experimenty a technické ukázky.</h2>
+            <p data-i18n="projects.body">
+              Projekty beru jako důkaz, že umím věci rozběhnout, upravit, nasadit a dotáhnout do použitelné podoby. Detaily a screenshoty můžeme postupně doplnit.
+            </p>
+          </article>
+
+          <div class="project-stack fly fly-right">
+            <a class="project-card" href="https://pustovnickysmak.sk/" target="_blank" rel="noreferrer">
+              <span class="project-visual food"></span>
+              <strong>Pustovnicky smak</strong>
+              <small>web / obsah / prezentace</small>
+            </a>
+            <a class="project-card" href="https://imunologia.8u.cz/odkladiva/index.html" target="_blank" rel="noreferrer">
+              <span class="project-visual tools"></span>
+              <strong>Odkladiva</strong>
+              <small>web experiment</small>
+            </a>
+            <a class="project-card" href="https://www.strunga.eu/programy/pb-time/" target="_blank" rel="noreferrer">
+              <span class="project-visual time"></span>
+              <strong>PB Time</strong>
+              <small>program / landing detail</small>
+            </a>
+            <a class="project-card" href="https://imunologia.8u.cz/gameemulator/test.html" target="_blank" rel="noreferrer">
+              <span class="project-visual game"></span>
+              <strong>Oldschool emulator host</strong>
+              <small>hosting / retro UI concept</small>
+            </a>
+          </div>
+        </div>
+
+        <div class="scene" id="contact" data-scene-panel="contact">
+          <article class="panel contact-panel fly fly-top">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+            <h2 data-i18n="contact.title">Otevřený pro IT support, application support a debugging role.</h2>
+            <p data-i18n="contact.body">
+              Nejlepší fit: tým, kde se řeší reálné technické problémy, komunikuje se s vývojem nebo techniky, píše dokumentace a postupně se zlepšují procesy.
+            </p>
+            <div class="contact-grid">
+              <a href="mailto:simonhives@gmail.com">simonhives@gmail.com</a>
+              <a href="tel:+420727953537">+420 727 953 537</a>
+              <a href="https://github.com/xhives00/cv" target="_blank" rel="noreferrer">GitHub / cv</a>
+              <a href="assets/simon-hives-cv.pdf" target="_blank" rel="noreferrer">CV PDF</a>
+            </div>
+          </article>
+
+          <aside class="panel checklist fly fly-bottom">
+            <strong data-i18n="contact.listTitle">Co můžu přinést do týmu</strong>
+            <ul>
+              <li data-i18n="contact.item1">trpělivé hledání příčiny problému</li>
+              <li data-i18n="contact.item2">srozumitelnou komunikaci s techniky i netechniky</li>
+              <li data-i18n="contact.item3">manuály, postupy a procesní myšlení</li>
+              <li data-i18n="contact.item4">praktický přístup bez zbytečného ega</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <footer class="statusbar">
+        <span id="scene-name">intro</span>
+        <span data-i18n="status.hint">kolečko myši / šipky / drag plochy mění sekce</span>
+        <span id="clock">--:--</span>
+      </footer>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
