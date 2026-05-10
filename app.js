@@ -6,21 +6,20 @@ let wheelLock = false;
 const copy = {
   cs: {
     "intro.eyebrow": "Portfolio canvas / 2026",
-    "intro.title": "Technicky klidný problem solver pro support vývoje a debugging.",
+    "intro.title": "Technicky klidný problem solver pro vývoj, testing a debugging.",
     "intro.lead":
-      "Kombinuji web development, analytické myšlení, technickou praxi a férovou komunikaci. Hledám roli, kde můžu pomáhat s incidenty, logy, reprodukcí chyb, dokumentací a podporou vývojářů.",
+      "Kombinuji web development, analytické myšlení, testování a technickou praxi. Hledám roli, kde můžu vytvářet užitečné nástroje, ověřovat řešení, hledat příčiny chyb a podporovat vývoj bez chaosu.",
     "intro.cta": "Kontaktovat",
-    "intro.next": "Projit signal",
     "profile.eyebrow": "Profil",
     "profile.title": "Stavím na spolehlivost, kontext a dotažení věcí.",
     "profile.body":
-      "Poslední roky jsem pracoval hodně prakticky: technické práce, odpovědnost za výsledek, týmová domluva, čtení plánů a komunikace s lidmi v terénu. Do IT se vracím s reálným životním backgroundem a se silným zájmem o debugging, weby, AI nástroje a systematické řešení problémů.",
-    "profile.card1.title": "Analytika",
-    "profile.card1.body": "Rozkládám problém na kroky, hledám příčinu, ne jen symptom.",
-    "profile.card2.title": "Procesy",
-    "profile.card2.body": "Umím tvořit postupy, manuály a předávat technické informace srozumitelně.",
-    "profile.card3.title": "Praxe",
-    "profile.card3.body": "Potřebuji čas, kontext a vybavení, abych mohl dodávat precizní řešení a budovat systém.",
+      "Nejsem fanoušek punkového vývoje, kde se věci lepí narychlo a systém se později láme pod vlastní vahou. Preferuji klidný průzkum, promyšlenou volbu technologií, průběžné testování a řešení, která se dají dlouhodobě udržovat.",
+    "profile.card1.title": "Průzkum",
+    "profile.card1.body": "Než začnu stavět, chci pochopit problém, možnosti, rizika a směr.",
+    "profile.card2.title": "Systém",
+    "profile.card2.body": "Radši měřím desetkrát a řežu jednou. Řešení má držet, ne jen přežít demo.",
+    "profile.card3.title": "Testování",
+    "profile.card3.body": "Věřím v průběžné ověřování, dokumentaci a postupné zlepšování bez zbytečného spěchu.",
     "skills.eyebrow": "Skill matrix",
     "skills.title": "Stack pro support, diagnostiku a menší vývoj.",
     "skills.body":
@@ -28,7 +27,7 @@ const copy = {
     "projects.eyebrow": "Projekty",
     "projects.title": "Menší weby, experimenty a technické ukázky.",
     "projects.body":
-      "Projekty beru jako důkaz, že umím věci rozběhnout, upravit, nasadit a dotáhnout do použitelné podoby. Detaily a screenshoty můžeme postupně doplnit.",
+      "Projekty beru jako důkaz, že umím věci rozběhnout, upravit, nasadit a dotáhnout do použitelné podoby.",
     "contact.eyebrow": "Kontakt",
     "contact.title": "Otevřený pro IT support, application support a debugging role.",
     "contact.body":
@@ -42,21 +41,21 @@ const copy = {
   },
   sk: {
     "intro.eyebrow": "Portfolio canvas / 2026",
-    "intro.title": "Technicky pokojny problem solver pre support vyvoja a debugging.",
+    "intro.title": "Technicky pokojny problem solver pre vyvoj, testing a debugging.",
     "intro.lead":
-      "Kombinujem web development, analyticke myslenie, technicku prax a ferovu komunikaciu. Hladam rolu, kde mozem pomahat s incidentmi, logmi, reprodukciou chyb, dokumentaciou a podporou vyvojarov.",
+      "Kombinujem web development, analyticke myslenie, testovanie a technicku prax. Hladam rolu, kde mozem vytvarat uzitocne nastroje, overovat riesenia, hladat priciny chyb a podporovat vyvoj bez chaosu.",
     "intro.cta": "Kontaktovat",
     "intro.next": "Prejst signal",
     "profile.eyebrow": "Profil",
     "profile.title": "Nepredavam agresivny hype. Staviam na spolahlivost, kontext a dotiahnutie veci.",
     "profile.body":
-      "Posledne roky som pracoval velmi prakticky: technicke prace, zodpovednost za vysledok, tymova dohoda, citanie planov a komunikacia s ludmi v terene. Do IT sa vraciam s realnym zivotnym backgroundom a so silnym zaujmom o debugging, weby, AI nastroje a systematicke riesenie problemov.",
-    "profile.card1.title": "Analyza",
-    "profile.card1.body": "Rozkladam problem na kroky, hladam pricinu, nie iba symptom.",
-    "profile.card2.title": "Procesy",
-    "profile.card2.body": "Viem tvorit postupy, manualy a odovzdavat technicke informacie zrozumitelne.",
-    "profile.card3.title": "Prax",
-    "profile.card3.body": "Potrebujem cas, kontext a vybavenie, aby som mohol dodavat precizne riesenia a budovat system.",
+      "Nie som fanusik punkoveho vyvoja, kde sa veci lepia narychlo a system sa neskor lame pod vlastnou vahou. Preferujem pokojny prieskum, premyslenu volbu technologii, priebezne testovanie a riesenia, ktore sa daju dlhodobo udrziavat.",
+    "profile.card1.title": "Prieskum",
+    "profile.card1.body": "Skor nez zacnem stavat, chcem pochopit problem, moznosti, rizika a smer.",
+    "profile.card2.title": "System",
+    "profile.card2.body": "Radsej meriam desatkrat a reziem raz. Riesenie ma drzat, nie iba prezit demo.",
+    "profile.card3.title": "Testovanie",
+    "profile.card3.body": "Verim v priebezne overovanie, dokumentaciu a postupne zlepsovanie bez zbytocneho spechu.",
     "skills.eyebrow": "Skill matrix",
     "skills.title": "Stack pre support, diagnostiku a mensi vyvoj.",
     "skills.body":
@@ -64,7 +63,7 @@ const copy = {
     "projects.eyebrow": "Projekty",
     "projects.title": "Mensie weby, experimenty a technicke ukazky.",
     "projects.body":
-      "Projekty beriem ako dokaz, ze viem veci rozbehnut, upravit, nasadit a dotiahnut do pouzitelnej podoby. Detaily a screenshoty mozeme postupne doplnit.",
+      "Projekty beriem ako dokaz, ze viem veci rozbehnut, upravit, nasadit a dotiahnut do pouzitelnej podoby.",
     "contact.eyebrow": "Kontakt",
     "contact.title": "Otvoreny pre IT support, application support a debugging role.",
     "contact.body":
@@ -78,21 +77,20 @@ const copy = {
   },
   en: {
     "intro.eyebrow": "Portfolio canvas / 2026",
-    "intro.title": "Calm technical problem solver for software support and debugging.",
+    "intro.title": "Calm technical problem solver for development, testing and debugging.",
     "intro.lead":
-      "I combine web development, analytical thinking, hands-on technical work and honest communication. I am looking for a role where I can help with incidents, logs, bug reproduction, documentation and developer support.",
+      "I combine web development, analytical thinking, testing and hands-on technical work. I am looking for a role where I can build useful tools, validate solutions, investigate bugs and support development without chaos.",
     "intro.cta": "Contact",
-    "intro.next": "Trace signal",
     "profile.eyebrow": "Profile",
     "profile.title": "No aggressive hype. I rely on reliability, context and finishing the work.",
     "profile.body":
-      "In recent years I worked in practical technical roles: responsibility for results, teamwork, reading plans and communicating with people in the field. I am returning to IT with real-world background and a strong interest in debugging, web projects, AI tools and systematic problem solving.",
-    "profile.card1.title": "Analysis",
-    "profile.card1.body": "I break problems into steps and look for root causes, not only symptoms.",
-    "profile.card2.title": "Processes",
-    "profile.card2.body": "I can create procedures, manuals and communicate technical information clearly.",
-    "profile.card3.title": "Practice",
-    "profile.card3.body": "I need time, context and the right tools to deliver precise solutions and build a system.",
+      "I do not like rushed, improvised development where systems grow without structure and later collapse under their own weight. I prefer calm research, deliberate technology choices, continuous testing and solutions that can be maintained long term.",
+    "profile.card1.title": "Research",
+    "profile.card1.body": "Before building, I want to understand the problem, options, risks and direction.",
+    "profile.card2.title": "System",
+    "profile.card2.body": "Measure carefully, cut once. A solution should last, not only survive a demo.",
+    "profile.card3.title": "Testing",
+    "profile.card3.body": "I believe in continuous validation, documentation and steady improvement without needless rush.",
     "skills.eyebrow": "Skill matrix",
     "skills.title": "Stack for support, diagnostics and small development tasks.",
     "skills.body":
@@ -100,7 +98,7 @@ const copy = {
     "projects.eyebrow": "Projects",
     "projects.title": "Small websites, experiments and technical demos.",
     "projects.body":
-      "I treat projects as proof that I can start, adjust, deploy and finish usable things. More details and screenshots can be added over time.",
+      "I treat projects as proof that I can start, adjust, deploy and finish usable things.",
     "contact.eyebrow": "Contact",
     "contact.title": "Open to IT support, application support and debugging roles.",
     "contact.body":
@@ -114,21 +112,20 @@ const copy = {
   },
   de: {
     "intro.eyebrow": "Portfolio canvas / 2026",
-    "intro.title": "Ruhiger technischer Problemloeser fuer Support und Debugging.",
+    "intro.title": "Ruhiger technischer Problemloeser fuer Entwicklung, Testing und Debugging.",
     "intro.lead":
-      "Ich verbinde Webentwicklung, analytisches Denken, technische Praxis und faire Kommunikation. Ich suche eine Rolle mit Incidents, Logs, Fehlerreproduktion, Dokumentation und Entwickler-Support.",
+      "Ich verbinde Webentwicklung, analytisches Denken, Testing und technische Praxis. Ich suche eine Rolle, in der ich nuetzliche Tools bauen, Loesungen pruefen, Fehlerursachen finden und Entwicklung ohne Chaos unterstuetzen kann.",
     "intro.cta": "Kontakt",
-    "intro.next": "Signal pruefen",
     "profile.eyebrow": "Profil",
     "profile.title": "Kein aggressiver Hype. Ich setze auf Zuverlaessigkeit, Kontext und saubere Arbeit.",
     "profile.body":
-      "In den letzten Jahren habe ich praktisch und technisch gearbeitet: Verantwortung fuer Ergebnisse, Teamarbeit, Lesen von Plaenen und Kommunikation mit Menschen im Feld. Ich komme mit realer Erfahrung zurueck in die IT und interessiere mich stark fuer Debugging, Webprojekte, AI-Tools und systematisches Problemloesen.",
-    "profile.card1.title": "Analyse",
-    "profile.card1.body": "Ich zerlege Probleme in Schritte und suche Ursachen, nicht nur Symptome.",
-    "profile.card2.title": "Prozesse",
-    "profile.card2.body": "Ich kann Ablaufe, Handbuecher und technische Informationen klar formulieren.",
-    "profile.card3.title": "Praxis",
-    "profile.card3.body": "Ich brauche Zeit, Kontext und passende Werkzeuge, um praezise Loesungen zu liefern und Systeme aufzubauen.",
+      "Ich mag keine ueberhastete Improvisation, bei der Systeme ohne Struktur wachsen und spaeter unter ihrem eigenen Gewicht brechen. Ich bevorzuge ruhige Recherche, bewusste Technologieentscheidungen, laufendes Testing und langfristig wartbare Loesungen.",
+    "profile.card1.title": "Recherche",
+    "profile.card1.body": "Bevor ich baue, will ich Problem, Optionen, Risiken und Richtung verstehen.",
+    "profile.card2.title": "System",
+    "profile.card2.body": "Sorgfaeltig messen, einmal schneiden. Eine Loesung soll halten, nicht nur eine Demo ueberstehen.",
+    "profile.card3.title": "Testing",
+    "profile.card3.body": "Ich glaube an laufende Pruefung, Dokumentation und stetige Verbesserung ohne unnoetige Hektik.",
     "skills.eyebrow": "Skill matrix",
     "skills.title": "Stack fuer Support, Diagnose und kleinere Entwicklung.",
     "skills.body":
@@ -136,7 +133,7 @@ const copy = {
     "projects.eyebrow": "Projekte",
     "projects.title": "Kleine Websites, Experimente und technische Beispiele.",
     "projects.body":
-      "Projekte zeigen, dass ich Dinge starten, anpassen, deployen und brauchbar fertigstellen kann. Details und Screenshots koennen wir spaeter ergaenzen.",
+      "Projekte zeigen, dass ich Dinge starten, anpassen, deployen und brauchbar fertigstellen kann.",
     "contact.eyebrow": "Kontakt",
     "contact.title": "Offen fuer IT Support, Application Support und Debugging Rollen.",
     "contact.body":
