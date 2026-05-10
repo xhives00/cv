@@ -20,7 +20,7 @@ const copy = {
     "profile.card2.title": "Procesy",
     "profile.card2.body": "Umím tvořit postupy, manuály a předávat technické informace srozumitelně.",
     "profile.card3.title": "Praxe",
-    "profile.card3.body": "Znám práci pod tlakem, odpovědnost za dokončení a spolupráci s techniky.",
+    "profile.card3.body": "Potřebuji čas, kontext a vybavení, abych mohl dodávat precizní řešení a budovat systém.",
     "skills.eyebrow": "Skill matrix",
     "skills.title": "Stack pro support, diagnostiku a menší vývoj.",
     "skills.body":
@@ -56,7 +56,7 @@ const copy = {
     "profile.card2.title": "Procesy",
     "profile.card2.body": "Viem tvorit postupy, manualy a odovzdavat technicke informacie zrozumitelne.",
     "profile.card3.title": "Prax",
-    "profile.card3.body": "Poznam pracu pod tlakom, zodpovednost za dokoncenie a spolupracu s technikmi.",
+    "profile.card3.body": "Potrebujem cas, kontext a vybavenie, aby som mohol dodavat precizne riesenia a budovat system.",
     "skills.eyebrow": "Skill matrix",
     "skills.title": "Stack pre support, diagnostiku a mensi vyvoj.",
     "skills.body":
@@ -92,7 +92,7 @@ const copy = {
     "profile.card2.title": "Processes",
     "profile.card2.body": "I can create procedures, manuals and communicate technical information clearly.",
     "profile.card3.title": "Practice",
-    "profile.card3.body": "I know pressure, responsibility for completion and cooperation with technicians.",
+    "profile.card3.body": "I need time, context and the right tools to deliver precise solutions and build a system.",
     "skills.eyebrow": "Skill matrix",
     "skills.title": "Stack for support, diagnostics and small development tasks.",
     "skills.body":
@@ -128,7 +128,7 @@ const copy = {
     "profile.card2.title": "Prozesse",
     "profile.card2.body": "Ich kann Ablaufe, Handbuecher und technische Informationen klar formulieren.",
     "profile.card3.title": "Praxis",
-    "profile.card3.body": "Ich kenne Druck, Verantwortung und Zusammenarbeit mit Technikern.",
+    "profile.card3.body": "Ich brauche Zeit, Kontext und passende Werkzeuge, um praezise Loesungen zu liefern und Systeme aufzubauen.",
     "skills.eyebrow": "Skill matrix",
     "skills.title": "Stack fuer Support, Diagnose und kleinere Entwicklung.",
     "skills.body":
