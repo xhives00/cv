@@ -275,6 +275,26 @@ function setupNavigation() {
   });
 }
 
+function setupRaiseOnFocus() {
+  const selector = ".panel, .skill-board, .project-stack, .mini-card, .project-card, .checklist";
+
+  window.addEventListener("pointerdown", (event) => {
+    const target = event.target.closest(selector);
+    document.querySelectorAll(".is-raised").forEach((node) => node.classList.remove("is-raised"));
+    if (!target) return;
+
+    target.classList.add("is-raised");
+    const stack = target.closest(".project-stack");
+    if (stack) stack.classList.add("is-raised");
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      document.querySelectorAll(".is-raised").forEach((node) => node.classList.remove("is-raised"));
+    }
+  });
+}
+
 function setupCanvas() {
   const canvas = document.querySelector("#signal-canvas");
   const ctx = canvas.getContext("2d");
@@ -346,6 +366,7 @@ function init() {
   const hash = window.location.hash.replace("#", "");
   const initialIndex = scenes.includes(hash) ? scenes.indexOf(hash) : 0;
   setupNavigation();
+  setupRaiseOnFocus();
   setupCanvas();
   typeLog();
   setLanguage(currentLang);
