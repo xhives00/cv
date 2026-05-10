@@ -1,4 +1,4 @@
-const scenes = ["intro", "profile", "skills", "projects", "contact"];
+const scenes = ["intro", "profile", "relevant", "skills", "labs", "projects", "contact"];
 let activeScene = 0;
 let currentLang = "cs";
 let wheelLock = false;
@@ -6,37 +6,49 @@ let wheelLock = false;
 const copy = {
   cs: {
     "intro.eyebrow": "Portfolio canvas / 2026",
-    "intro.title": "Technicky klidný problem solver pro vývoj, testing a debugging.",
+    "intro.title": "Technical Support & Endpoint Security Candidate.",
     "intro.lead":
-      "Kombinuji web development, analytické myšlení, testování a technickou praxi. Hledám roli, kde můžu vytvářet užitečné nástroje, ověřovat řešení, hledat příčiny chyb a podporovat vývoj bez chaosu.",
+      "Kombinuji web development, Python, databázové základy, síťovou diagnostiku a praktické řešení problémů. Hledám roli v technical supportu / endpoint security supportu, kde můžu analyzovat logy, reprodukovat chyby, komunikovat se zákazníky a eskalovat jasně popsané problémy.",
     "intro.cta": "Kontaktovat",
     "profile.eyebrow": "Profil",
-    "profile.title": "Stavím na spolehlivost, kontext a dotažení věcí.",
+    "profile.title": "Systematický přístup místo rychlého lepení problémů.",
     "profile.body":
-      "Nejsem fanoušek punkového vývoje, kde se věci lepí narychlo a systém se později láme pod vlastní vahou. Preferuji klidný průzkum, promyšlenou volbu technologií, průběžné testování a řešení, která se dají dlouhodobě udržovat.",
-    "profile.card1.title": "Průzkum",
-    "profile.card1.body": "Než začnu stavět, chci pochopit problém, možnosti, rizika a směr.",
-    "profile.card2.title": "Systém",
-    "profile.card2.body": "Radši měřím desetkrát a řežu jednou. Řešení má držet, ne jen přežít demo.",
-    "profile.card3.title": "Testování",
-    "profile.card3.body": "Věřím v průběžné ověřování, dokumentaci a postupné zlepšování bez zbytečného spěchu.",
+      "Profil stavím poctivě: technický kandidát se základem v programování, databázích, webových projektech, praktické technické práci a labovém učení bezpečnosti. Sedí mi klidná diagnostika, dokumentace, komunikace a postupné budování funkčního systému.",
+    "profile.card1.title": "Diagnostika",
+    "profile.card1.body": "Nejdřív chci pochopit symptom, prostředí, logy, reprodukci a dopad.",
+    "profile.card2.title": "Komunikace",
+    "profile.card2.body": "Umím převést technický problém do jasných kroků pro zákazníka i eskalaci.",
+    "profile.card3.title": "Preciznost",
+    "profile.card3.body": "Potřebuji čas, kontext a nástroje, abych mohl dodávat přesná a udržitelná řešení.",
+    "relevant.eyebrow": "Endpoint support fit",
+    "relevant.title": "Relevantní pro Endpoint Support.",
+    "relevant.body":
+      "Zaměření na základy potřebné pro support endpoint security produktů: sítě, VPN, autentizace, Windows diagnostika, logy, databáze a strukturované vedení případů.",
     "skills.eyebrow": "Skill matrix",
-    "skills.title": "Stack pro support, diagnostiku a menší vývoj.",
+    "skills.title": "Skill matrix pro support a troubleshooting.",
     "skills.body":
-      "Mám širší technický základ, učím se rychle přes reálné problémy a umím použít AI jako pomocníka při analýzách, dokumentaci i hledání variant řešení.",
+      "Praktický základ pro práci s incidenty, logy, zákaznickou komunikací, síťovými koncepty a menším vývojem nástrojů.",
+    "labs.eyebrow": "Security learning labs",
+    "labs.title": "Bezpečnost jako obranná diagnostika.",
+    "labs.body":
+      "Ve vlastních lab podmínkách jsem se učil analyzovat síťový provoz pomocí Wiresharku, chápat ARP/DNS/TCP chování, běžné bezpečnostní slabiny a principy útoků z pohledu obrany, diagnostiky a prevence.",
+    "why.eyebrow": "Why endpoint support",
+    "why.title": "Proč endpoint support.",
+    "why.body":
+      "Baví mě hledání příčiny problému, práce s logy, bezpečnost, komunikace mezi technickým a netechnickým světem a učení produktů do hloubky. Chci pomáhat zlepšovat systémy postupně a přesně.",
     "projects.eyebrow": "Projekty",
     "projects.title": "Menší weby, experimenty a technické ukázky.",
     "projects.body":
       "Projekty beru jako důkaz, že umím věci rozběhnout, upravit, nasadit a dotáhnout do použitelné podoby.",
     "contact.eyebrow": "Kontakt",
-    "contact.title": "Otevřený pro IT support, application support a debugging role.",
+    "contact.title": "Otevřený pro Technical Support, Endpoint Security Support, Application Support a Junior Cybersecurity Troubleshooting role.",
     "contact.body":
-      "Nejlepší fit: tým, kde se řeší reálné technické problémy, komunikuje se s vývojem nebo techniky, píše dokumentace a postupně se zlepšují procesy.",
+      "Preferuji role, kde je důležitá přesná diagnostika, komunikace se zákazníkem, práce s logy a technické dotahování případů.",
     "contact.listTitle": "Co můžu přinést do týmu",
-    "contact.item1": "trpělivé hledání příčiny problému",
-    "contact.item2": "srozumitelnou komunikaci s techniky i netechniky",
-    "contact.item3": "manuály, postupy a procesní myšlení",
-    "contact.item4": "praktický přístup bez zbytečného ega",
+    "contact.item1": "log analysis a strukturované troubleshooting kroky",
+    "contact.item2": "srozumitelnou komunikaci se zákazníkem i techniky",
+    "contact.item3": "dokumentaci, postupy a procesní myšlení",
+    "contact.item4": "AI-assisted workflow bez nahrazování vlastního porozumění",
     "status.hint": "kolečko myši / šipky / drag plochy mění sekce",
   },
   sk: {
@@ -149,11 +161,12 @@ const copy = {
 
 const logs = [
   "> boot portfolio_canvas --candidate Simon_Hives",
-  "[ok] technical_background: web / python / sql / field_work",
-  "[scan] incidents -> reproduce -> isolate -> document -> communicate",
+  "[ok] focus: endpoint support / network troubleshooting / logs",
+  "[lab] wireshark: dns tcp tls observation",
+  "[scan] reproduce -> inspect logs -> isolate -> document -> escalate",
+  "[db] sql basics: querying / data modeling / VUT coursework",
   "[note] calm approach detected; no fake senior mode",
-  "[ai] assisted analysis enabled",
-  "[ready] open to support, application support, debugging",
+  "[ready] technical support candidate",
 ];
 
 function setScene(index) {
@@ -273,7 +286,7 @@ function setupNavigation() {
 }
 
 function setupRaiseOnFocus() {
-  const selector = ".panel, .skill-board, .project-stack, .mini-card, .project-card, .checklist";
+  const selector = ".panel, .skill-board, .project-stack, .mini-card, .project-card, .checklist, .info-card, .skill-category";
 
   window.addEventListener("pointerdown", (event) => {
     const target = event.target.closest(selector);
