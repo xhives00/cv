@@ -40,6 +40,10 @@
           <button class="tab" type="button" data-scene="contact">07</button>
         </nav>
 
+        <div class="lang-switch" aria-label="Jazyk">
+          <button class="lang is-active" type="button" data-lang="cs">CZ</button>
+          <button class="lang" type="button" data-lang="en">EN</button>
+        </div>
       </header>
 
       <section class="stage" aria-label="Interaktivni portfolio platno">
@@ -110,13 +114,13 @@
           </article>
 
           <div class="relevance-grid fly fly-right">
-            <article class="info-card"><strong>TCP/IP fundamentals</strong><p>IP addressing, DNS, ports, TCP vs UDP, basic routing</p></article>
-            <article class="info-card"><strong>VPN concepts</strong><p>SSL VPN, IPSec, certificates, MFA troubleshooting</p></article>
-            <article class="info-card"><strong>Authentication</strong><p>LDAP, SAML, RADIUS, OAuth/OIDC basics</p></article>
-            <article class="info-card"><strong>Endpoint & Windows</strong><p>services, Event Viewer, certificates, endpoint logs</p></article>
-            <article class="info-card"><strong>Packet analysis</strong><p>Wireshark, DNS/TCP/TLS observation in lab environments</p></article>
-            <article class="info-card"><strong>Databases</strong><p>SQL basics, semester coursework at VUT, data querying</p></article>
-            <article class="info-card"><strong>Case handling</strong><p>structured troubleshooting, documentation, customer communication</p></article>
+            <article class="info-card"><strong data-i18n="relevant.card1.title">TCP/IP fundamentals</strong><p data-i18n="relevant.card1.body">IP addressing, DNS, ports, TCP vs UDP, basic routing</p></article>
+            <article class="info-card"><strong data-i18n="relevant.card2.title">VPN concepts</strong><p data-i18n="relevant.card2.body">SSL VPN, IPSec, certificates, MFA troubleshooting</p></article>
+            <article class="info-card"><strong data-i18n="relevant.card3.title">Authentication</strong><p data-i18n="relevant.card3.body">LDAP, SAML, RADIUS, OAuth/OIDC basics</p></article>
+            <article class="info-card"><strong data-i18n="relevant.card4.title">Endpoint & Windows</strong><p data-i18n="relevant.card4.body">services, Event Viewer, certificates, endpoint logs</p></article>
+            <article class="info-card"><strong data-i18n="relevant.card5.title">Packet analysis</strong><p data-i18n="relevant.card5.body">Wireshark, DNS/TCP/TLS observation in lab environments</p></article>
+            <article class="info-card"><strong data-i18n="relevant.card6.title">Databases</strong><p data-i18n="relevant.card6.body">SQL basics, semester coursework at VUT, data querying</p></article>
+            <article class="info-card"><strong data-i18n="relevant.card7.title">Case handling</strong><p data-i18n="relevant.card7.body">structured troubleshooting, documentation, customer communication</p></article>
           </div>
         </div>
 
@@ -131,20 +135,20 @@
 
           <div class="skill-board fly fly-bottom" aria-label="Technicke znalosti">
             <article class="skill-category">
-              <strong>Support & Troubleshooting</strong>
-              <span>root cause analysis</span><span>log reading</span><span>reproduction steps</span><span>documentation</span><span>customer communication</span>
+              <strong data-i18n="skillcat.support.title">Support & Troubleshooting</strong>
+              <span data-i18n="skillcat.support.item1">root cause analysis</span><span data-i18n="skillcat.support.item2">log reading</span><span data-i18n="skillcat.support.item3">reproduction steps</span><span data-i18n="skillcat.support.item4">documentation</span><span data-i18n="skillcat.support.item5">customer communication</span>
             </article>
             <article class="skill-category">
-              <strong>Networking & Security</strong>
-              <span>TCP/IP</span><span>DNS</span><span>VPN concepts</span><span>Wireshark</span><span>authentication basics</span>
+              <strong data-i18n="skillcat.network.title">Networking & Security</strong>
+              <span>TCP/IP</span><span>DNS</span><span data-i18n="skillcat.network.item3">VPN concepts</span><span>Wireshark</span><span data-i18n="skillcat.network.item5">authentication basics</span>
             </article>
             <article class="skill-category">
-              <strong>Systems & Tools</strong>
-              <span>Windows</span><span>Linux basics</span><span>PowerShell / Bash</span><span>Git</span>
+              <strong data-i18n="skillcat.systems.title">Systems & Tools</strong>
+              <span>Windows</span><span data-i18n="skillcat.systems.item2">Linux basics</span><span>PowerShell / Bash</span><span>Git</span>
             </article>
             <article class="skill-category">
-              <strong>Development & Data</strong>
-              <span>Python</span><span>HTML/CSS/JS</span><span>SQL</span><span>Django/Flask basics</span><span>AI-assisted workflow</span>
+              <strong data-i18n="skillcat.dev.title">Development & Data</strong>
+              <span>Python</span><span>HTML/CSS/JS</span><span>SQL</span><span data-i18n="skillcat.dev.item4">Django/Flask basics</span><span>AI-assisted workflow</span>
             </article>
           </div>
         </div>
@@ -165,8 +169,8 @@
               Baví mě hledání příčiny problému, práce s logy, bezpečnost, komunikace mezi technickým a netechnickým světem a učení produktů do hloubky. Chci pomáhat zlepšovat systémy postupně a přesně.
             </p>
             <div class="language-strip">
-              <span>English B2</span>
-              <span>Němčina A2, aktivně zlepšuji</span>
+              <span data-i18n="languages.en">English B2</span>
+              <span data-i18n="languages.de">Němčina A2, aktivně zlepšuji</span>
             </div>
           </article>
         </div>
@@ -184,27 +188,27 @@
             <a class="project-card" href="https://pustovnickysmak.sk/" target="_blank" rel="noreferrer">
               <span class="project-visual food"></span>
               <strong>Pustovnicky smak</strong>
-              <small>support relevance: user-facing web / practical delivery</small>
+              <small data-i18n="project.pustovnickysmak.meta">support relevance: user-facing web / practical delivery</small>
             </a>
             <a class="project-card" href="https://imunologia.8u.cz/odkladiva/index.html" target="_blank" rel="noreferrer">
               <span class="project-visual tools"></span>
               <strong>Odkladiva</strong>
-              <small>support relevance: hosting / troubleshooting / iteration</small>
+              <small data-i18n="project.odkladiva.meta">support relevance: hosting / troubleshooting / iteration</small>
             </a>
             <a class="project-card" href="https://www.strunga.eu/programy/pb-time/" target="_blank" rel="noreferrer">
               <span class="project-visual time"></span>
               <strong>PB Time</strong>
-              <small>support relevance: deployment / debugging / documentation</small>
+              <small data-i18n="project.pbtime.meta">support relevance: deployment / debugging / documentation</small>
             </a>
             <a class="project-card" href="https://imunologia.8u.cz/gameemulator/test.html" target="_blank" rel="noreferrer">
               <span class="project-visual game"></span>
               <strong>Oldschool emulator host</strong>
-              <small>support relevance: hosting / debugging</small>
+              <small data-i18n="project.emulator.meta">support relevance: hosting / debugging</small>
             </a>
             <a class="project-card" href="https://imunologia.8u.cz/unitygames/" target="_blank" rel="noreferrer">
               <span class="project-visual unity"></span>
               <strong>Unity games</strong>
-              <small>support relevance: deployment / testing / practical delivery</small>
+              <small data-i18n="project.unity.meta">support relevance: deployment / testing / practical delivery</small>
             </a>
           </div>
         </div>
